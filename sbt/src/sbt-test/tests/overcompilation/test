@@ -1,0 +1,5 @@
+> client/recordPreviousIterations
+> client/compile
+$ copy-file changes/ConsoleState.scala client/src/main/scala/com.olegych.scastie.client/ConsoleState.scala
+> client/compile
+> client/checkIterations 2
