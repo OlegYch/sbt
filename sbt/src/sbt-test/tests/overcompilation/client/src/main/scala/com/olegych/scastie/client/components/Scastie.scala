@@ -11,6 +11,7 @@ import japgolly.scalajs.react.extra.router._
 import japgolly.scalajs.react.vdom.all._
 import org.scalajs.dom
 import org.scalajs.dom.raw.HTMLScriptElement
+import components._
 
 final case class Scastie(
     router: Option[RouterCtl[Page]],

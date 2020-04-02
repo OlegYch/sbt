@@ -4,6 +4,7 @@ package components
 import com.olegych.scastie.api.SnippetId
 
 import japgolly.scalajs.react._, vdom.all._, extra._
+import components._
 
 final case class DownloadButton(snippetId: SnippetId) {
   def render: VdomElement = DownloadButton.component(this)
@@ -32,3 +33,4 @@ object DownloadButton {
       .configure(Reusability.shouldComponentUpdate)
       .build
 }
+

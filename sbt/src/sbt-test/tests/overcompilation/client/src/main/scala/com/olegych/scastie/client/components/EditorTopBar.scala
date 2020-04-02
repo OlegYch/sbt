@@ -5,6 +5,7 @@ package components
 import api.{SnippetId, User, ScalaTarget}
 
 import japgolly.scalajs.react._, vdom.all._, extra.router._, extra._
+import components._
 
 final case class EditorTopBar(clear: Reusable[Callback],
                               closeNewSnippetModal: Reusable[Callback],

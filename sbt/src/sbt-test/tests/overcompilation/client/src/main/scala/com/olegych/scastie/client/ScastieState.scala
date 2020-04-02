@@ -51,16 +51,16 @@ object ScastieState {
   }
 
   implicit val dontSerializeAttachedDoms: Format[AttachedDoms] =
-    dontSerialize[AttachedDoms](AttachedDoms(Map()))
+    Client.dontSerialize[AttachedDoms](AttachedDoms(Map()))
 
   implicit val dontSerializeStatusState: Format[StatusState] =
-    dontSerialize[StatusState](StatusState.empty)
+    Client.dontSerialize[StatusState](StatusState.empty)
 
   implicit val dontSerializeEventStream: Format[EventStream[StatusProgress]] =
-    dontSerializeOption[EventStream[StatusProgress]]
+    Client.dontSerializeOption[EventStream[StatusProgress]]
 
   implicit val dontSerializeProgressStream: Format[EventStream[SnippetProgress]] =
-    dontSerializeOption[EventStream[SnippetProgress]]
+    Client.dontSerializeOption[EventStream[SnippetProgress]]
 
   implicit val formatScastieState: OFormat[ScastieState] =
     Json.format[ScastieState]

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import js.{|, UndefOr, undefined}
 import js.annotation._
 import org.scalajs.dom.raw.Element
+import CodeMirror._
 
 @js.native
 @JSGlobal("Doc")

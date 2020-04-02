@@ -1,10 +1,10 @@
-package com.olegych.scastie
+package com.olegych.scastie.client
 
 import play.api.libs.json._
 
 import org.scalajs.dom.window
 
-package object client {
+object Client {
 
   def dontSerialize[T](fallback: T): Format[T] = new Format[T] {
     def writes(v: T): JsValue = JsNull

@@ -1,12 +1,13 @@
-package com.olegych.scastie.client
+package com.olegych.scastie.client.components
 
 import com.olegych.scastie.api._
 
 import japgolly.scalajs.react.Reusability
 import japgolly.scalajs.react.Reusable
 import japgolly.scalajs.react.Callback
+import com.olegych.scastie.client._
 
-package object components {
+object components {
 
   val reusableEmpty: Reusable[Callback] = Reusable.always(Callback.empty)
 

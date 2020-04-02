@@ -10,6 +10,7 @@ import japgolly.scalajs.react.component.builder.Lifecycle.RenderScope
 import scalajs.concurrent.JSExecutionContext.Implicits.queue
 
 import scala.concurrent.Future
+import components._
 
 final case class CodeSnippets(
     view: View,
@@ -183,3 +184,4 @@ object CodeSnippets {
       .configure(Reusability.shouldComponentUpdate)
       .build
 }
+

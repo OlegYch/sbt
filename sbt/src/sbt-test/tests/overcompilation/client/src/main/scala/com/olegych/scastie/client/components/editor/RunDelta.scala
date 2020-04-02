@@ -6,6 +6,7 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.Reusability
 
 import codemirror.TextAreaEditor
+import components._
 
 private[editor] object RunDelta {
 

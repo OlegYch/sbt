@@ -9,7 +9,6 @@ import js.{Dictionary, RegExp, UndefOr, |}
 @js.native
 @JSImport("codemirror", JSImport.Namespace)
 object CodeMirror extends js.Object {
-
   @js.native
   class Pos extends js.Object {
     var line: Int = js.native

@@ -6,6 +6,7 @@ import org.scalajs.dom.raw.HTMLDivElement
 import japgolly.scalajs.react._
 import vdom.all._
 import extra._
+import components._
 
 final case class Console(isOpen: Boolean,
                          isRunning: Boolean,
@@ -90,3 +91,4 @@ object Console {
       .configure(Reusability.shouldComponentUpdate)
       .build
 }
+

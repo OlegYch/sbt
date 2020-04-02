@@ -4,6 +4,7 @@ import com.olegych.scastie.api.{Inputs, TaskId}
 import com.olegych.scastie.client.{StatusState, Page}
 
 import japgolly.scalajs.react._, vdom.all._, extra.router._, extra._
+import components._
 
 final case class Status(state: StatusState, router: RouterCtl[Page], isAdmin: Boolean, inputs: Inputs) {
   def render: VdomElement = Status.component(this)

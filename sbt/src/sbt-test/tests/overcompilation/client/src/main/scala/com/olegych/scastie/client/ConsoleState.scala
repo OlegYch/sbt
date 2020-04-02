@@ -18,3 +18,4 @@ case class ConsoleState(
     consoleHasUserOutput: Boolean,
     userOpenedConsole: Boolean
 )
+

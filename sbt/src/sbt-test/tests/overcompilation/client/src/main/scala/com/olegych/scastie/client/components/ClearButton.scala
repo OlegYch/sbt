@@ -5,6 +5,8 @@ import com.olegych.scastie.client.components.editor.EditorOptions
 import japgolly.scalajs.react._
 import vdom.all._
 import extra._
+import components._
+
 
 final case class ClearButton(clear: Reusable[Callback]) {
   def render: VdomElement = ClearButton.component(this)

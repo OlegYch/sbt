@@ -4,7 +4,7 @@ import com.olegych.scastie.api
 
 import japgolly.scalajs.react.Callback
 
-import codemirror.{TextAreaEditor, CodeMirror, modeScala}
+import codemirror.{TextAreaEditor, CodeMirror}
 
 import org.scalajs.dom
 import org.scalajs.dom.raw.HTMLElement
@@ -30,7 +30,7 @@ object RenderAnnotations {
           val endPos = doc.posFromIndex(end)
 
           val process = (node: HTMLElement) => {
-            CodeMirror.runMode(s"$value: $tpe", modeScala, node)
+            CodeMirror.runMode(s"$value: $tpe", "text/x-scala", node)
             node.title = tpe
             ()
           }

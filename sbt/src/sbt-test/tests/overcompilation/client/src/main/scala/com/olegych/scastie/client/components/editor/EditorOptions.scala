@@ -1,6 +1,6 @@
 package com.olegych.scastie.client.components.editor
 
-import com.olegych.scastie.client.isMac
+import com.olegych.scastie.client.Client.isMac
 import scala.scalajs.js
 import org.scalajs.dom
 
@@ -88,3 +88,5 @@ object EditorOptions {
       .asInstanceOf[codemirror.Options]
   }
 }
+
+

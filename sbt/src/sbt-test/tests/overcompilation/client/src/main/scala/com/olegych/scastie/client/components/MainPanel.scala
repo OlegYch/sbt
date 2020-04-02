@@ -4,6 +4,7 @@ import com.olegych.scastie.client.components.editor.Editor
 import com.olegych.scastie.client.{ScastieBackend, ScastieState, View}
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.all._
+import components._
 
 final case class MainPanel(state: ScastieState, backend: ScastieBackend, props: Scastie) {
 
@@ -202,6 +203,7 @@ object MainPanel {
       .configure(Reusability.shouldComponentUpdate)
       .build
 }
+
 
 
 

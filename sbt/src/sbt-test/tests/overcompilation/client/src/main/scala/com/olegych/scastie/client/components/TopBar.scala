@@ -7,6 +7,7 @@ import api.User
 import japgolly.scalajs.react._, vdom.all._, extra._
 
 import org.scalajs.dom
+import components._
 
 final case class TopBar(view: StateSnapshot[View], user: Option[User]) {
   def render: VdomElement = TopBar.component(this)

@@ -3,6 +3,7 @@ package client
 package components
 
 import japgolly.scalajs.react._, vdom.all._, extra._
+import components._
 
 final case class ViewToggleButton(currentView: StateSnapshot[View],
                                   forView: View,

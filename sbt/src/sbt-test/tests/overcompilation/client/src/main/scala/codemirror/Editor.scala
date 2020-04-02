@@ -7,6 +7,7 @@ import org.scalajs.dom
 
 import js.{UndefOr, |}
 import scala.language.implicitConversions
+import CodeMirror._
 
 trait TextAreaEditor extends Editor {
   def save(): Unit
@@ -80,6 +81,11 @@ trait Editor extends js.Object {
   def getScrollerElement(): Element
   def getGutterElement(): Element
   def somethingSelected(): Boolean
+}
+
+object Editor {
+  implicit def toEditorEventHandler(editor: Editor): EditorEventHandler =
+    new EditorEventHandler(editor)
 }
 
 trait Token extends js.Object {
@@ -165,7 +171,3 @@ trait CursorCoords extends js.Object {
   val bottom: Double
 }
 
-trait Extensions {
-  implicit def toEditorEventHandler(editor: Editor): EditorEventHandler =
-    new EditorEventHandler(editor)
-}

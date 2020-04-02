@@ -13,6 +13,7 @@ import dom.raw.{HTMLInputElement, HTMLElement}
 import dom.ext.Ajax
 
 import scalajs.concurrent.JSExecutionContext.Implicits.queue
+import components._
 
 final case class ScaladexSearch(
     removeScalaDependency: ScalaDependency ~=> Callback,
@@ -426,3 +427,4 @@ object ScaladexSearch {
       .configure(Reusability.shouldComponentUpdate)
       .build
 }
+

@@ -6,6 +6,7 @@ import com.olegych.scastie.client.View
 import japgolly.scalajs.react._, vdom.all._, extra._
 
 import org.scalajs.dom
+import components._
 
 final case class EmbeddedMenu(isRunning: Boolean,
                               inputs: Inputs,
@@ -78,3 +79,4 @@ object EmbeddedMenu {
       .configure(Reusability.shouldComponentUpdate)
       .build
 }
+

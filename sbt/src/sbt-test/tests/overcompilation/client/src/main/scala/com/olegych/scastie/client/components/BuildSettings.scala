@@ -1,5 +1,6 @@
 package com.olegych.scastie.client.components
 
+import components._
 import com.olegych.scastie.api._
 import japgolly.scalajs.react._
 import vdom.TagOf
@@ -232,6 +233,9 @@ object BuildSettings {
       .configure(Reusability.shouldComponentUpdate)
       .build
 }
+
+
+
 
 
 

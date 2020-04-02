@@ -2,6 +2,8 @@ package com.olegych.scastie.client.components.editor
 
 import com.olegych.scastie.client.components._
 import com.olegych.scastie.api
+import components._
+
 
 import japgolly.scalajs.react.Reusability
 
